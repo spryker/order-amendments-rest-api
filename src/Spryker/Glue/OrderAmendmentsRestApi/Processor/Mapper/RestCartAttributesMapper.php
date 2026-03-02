@@ -12,12 +12,6 @@ use Generated\Shared\Transfer\RestCartsAttributesTransfer;
 
 class RestCartAttributesMapper implements RestCartAttributesMapperInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\QuoteTransfer $quoteTransfer
-     * @param \Generated\Shared\Transfer\RestCartsAttributesTransfer $restCartsAttributesTransfer
-     *
-     * @return \Generated\Shared\Transfer\RestCartsAttributesTransfer
-     */
     public function mapQuoteTransferToRestCartAttributesTransfer(
         QuoteTransfer $quoteTransfer,
         RestCartsAttributesTransfer $restCartsAttributesTransfer

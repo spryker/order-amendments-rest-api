@@ -16,19 +16,10 @@ use Spryker\Glue\OrderAmendmentsRestApi\Processor\Mapper\OrderAmendmentsMapperIn
 
 class OrderAmendmentsRestResponseBuilder implements OrderAmendmentsRestResponseBuilderInterface
 {
-    /**
-     * @param \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceBuilderInterface $restResourceBuilder
-     * @param \Spryker\Glue\OrderAmendmentsRestApi\Processor\Mapper\OrderAmendmentsMapperInterface $orderAmendmentsMapper
-     */
     public function __construct(protected RestResourceBuilderInterface $restResourceBuilder, protected OrderAmendmentsMapperInterface $orderAmendmentsMapper)
     {
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\SalesOrderAmendmentTransfer $salesOrderAmendmentTransfer
-     *
-     * @return \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceInterface
-     */
     public function createOrderAmendmentRestResource(
         SalesOrderAmendmentTransfer $salesOrderAmendmentTransfer
     ): RestResourceInterface {

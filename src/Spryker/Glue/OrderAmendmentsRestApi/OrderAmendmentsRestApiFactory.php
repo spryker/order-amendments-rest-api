@@ -21,33 +21,21 @@ use Spryker\Glue\OrderAmendmentsRestApi\Processor\RestResponseBuilder\OrderAmend
 
 class OrderAmendmentsRestApiFactory extends AbstractFactory
 {
-    /**
-     * @return \Spryker\Glue\OrderAmendmentsRestApi\Processor\Mapper\RestCartAttributesMapperInterface
-     */
     public function createRestCartAttributesMapper(): RestCartAttributesMapperInterface
     {
         return new RestCartAttributesMapper();
     }
 
-    /**
-     * @return \Spryker\Glue\OrderAmendmentsRestApi\Processor\Mapper\CartReorderRequestMapperInterface
-     */
     public function createCartReorderRequestMapper(): CartReorderRequestMapperInterface
     {
         return new CartReorderRequestMapper();
     }
 
-    /**
-     * @return \Spryker\Glue\OrderAmendmentsRestApi\Processor\Expander\OrderAmendmentsByOrderResourceRelationshipExpanderInterface
-     */
     public function createOrderAmendmentsByOrderResourceRelationshipExpander(): OrderAmendmentsByOrderResourceRelationshipExpanderInterface
     {
         return new OrderAmendmentsByOrderResourceRelationshipExpander($this->createOrderAmendmentsRestResponseBuilder());
     }
 
-    /**
-     * @return \Spryker\Glue\OrderAmendmentsRestApi\Processor\RestResponseBuilder\OrderAmendmentsRestResponseBuilderInterface
-     */
     public function createOrderAmendmentsRestResponseBuilder(): OrderAmendmentsRestResponseBuilderInterface
     {
         return new OrderAmendmentsRestResponseBuilder(
@@ -56,9 +44,6 @@ class OrderAmendmentsRestApiFactory extends AbstractFactory
         );
     }
 
-    /**
-     * @return \Spryker\Glue\OrderAmendmentsRestApi\Processor\Mapper\OrderAmendmentsMapperInterface
-     */
     public function createOrderAmendmentsMapper(): OrderAmendmentsMapperInterface
     {
         return new OrderAmendmentsMapper();

@@ -12,11 +12,6 @@ use Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceInterface;
 
 interface OrderAmendmentsRestResponseBuilderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\SalesOrderAmendmentTransfer $salesOrderAmendmentTransfer
-     *
-     * @return \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceInterface
-     */
     public function createOrderAmendmentRestResource(
         SalesOrderAmendmentTransfer $salesOrderAmendmentTransfer
     ): RestResourceInterface;

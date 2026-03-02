@@ -33,17 +33,11 @@ class OrderAmendmentsRestApiTester extends Actor
 {
     use _generated\OrderAmendmentsRestApiTesterActions;
 
-    /**
-     * @return \Spryker\Glue\GlueApplication\Rest\JsonApi\RestResourceInterface
-     */
     public function createRestResource(): RestResourceInterface
     {
         return new RestResource('order');
     }
 
-    /**
-     * @return \Spryker\Glue\GlueApplication\Rest\Request\Data\RestRequestInterface
-     */
     public function createRestRequest(): RestRequestInterface
     {
         return (new RestRequest())->createRestRequest();

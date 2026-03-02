@@ -12,12 +12,6 @@ use Generated\Shared\Transfer\RestCartReorderRequestAttributesTransfer;
 
 interface CartReorderRequestMapperInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\RestCartReorderRequestAttributesTransfer $restCartReorderRequestAttributesTransfer
-     * @param \Generated\Shared\Transfer\CartReorderRequestTransfer $cartReorderRequestTransfer
-     *
-     * @return \Generated\Shared\Transfer\CartReorderRequestTransfer
-     */
     public function mapRestCartReorderAttributesToCartReorderRequestTransfer(
         RestCartReorderRequestAttributesTransfer $restCartReorderRequestAttributesTransfer,
         CartReorderRequestTransfer $cartReorderRequestTransfer

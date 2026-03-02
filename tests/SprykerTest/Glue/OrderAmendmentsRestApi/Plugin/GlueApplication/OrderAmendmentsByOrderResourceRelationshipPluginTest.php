@@ -56,9 +56,6 @@ class OrderAmendmentsByOrderResourceRelationshipPluginTest extends Unit
      */
     protected OrderAmendmentsRestApiTester $tester;
 
-    /**
-     * @return void
-     */
     public function _before(): void
     {
         parent::_before();
@@ -69,9 +66,6 @@ class OrderAmendmentsByOrderResourceRelationshipPluginTest extends Unit
         );
     }
 
-    /**
-     * @return void
-     */
     public function testAddResourceRelationshipsAddsOrderAmendmentsRelationshipWhenOrderAmendmentIsProvidedInPayload(): void
     {
         // Arrange
@@ -100,9 +94,6 @@ class OrderAmendmentsByOrderResourceRelationshipPluginTest extends Unit
         $this->assertSame(static::TEST_UPDATED_AT, $restOrderAmendmentsAttributesTransfer->getUpdatedAt());
     }
 
-    /**
-     * @return void
-     */
     public function testAddResourceRelationshipsDoesNotAddAnyRelationshipsWhenOrderTransferIsNotProvidedAsPayload(): void
     {
         // Arrange
@@ -118,9 +109,6 @@ class OrderAmendmentsByOrderResourceRelationshipPluginTest extends Unit
         $this->assertCount(0, $restResource->getRelationships());
     }
 
-    /**
-     * @return void
-     */
     public function testAddResourceRelationshipsDoesNotAddAnyRelationshipsWhenOrderAmendmentIsNotProvidedInOrderTransferPayload(): void
     {
         // Arrange
