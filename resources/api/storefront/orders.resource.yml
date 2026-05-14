@@ -1,0 +1,8 @@
+resource:
+    name: Orders
+    shortName: orders
+
+    includes:
+        - relationshipName: order-amendments
+          targetResource: OrderAmendments
+          resolverClass: Spryker\Glue\OrderAmendmentsRestApi\Api\Storefront\Relationship\OrderAmendmentsRelationshipResolver

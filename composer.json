@@ -14,11 +14,13 @@
         "spryker/transfer": "^3.42.0"
     },
     "require-dev": {
+        "spryker/api-platform": "^1.0.0",
         "spryker/code-sniffer": "*",
         "spryker/container": "*",
         "spryker/testify": "*"
     },
     "suggest": {
+        "spryker/api-platform": "Required to expose API Platform resources.",
         "spryker/auth-rest-api": "If you want to authorize and authenticate customers via access tokens.",
         "spryker/authorization": "If you want to use multiple authorization strategies, minimum required version: 1.2.0.",
         "spryker/rest-request-validator": "If you want to use rest request validation."
