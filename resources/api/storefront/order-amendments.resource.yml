@@ -2,10 +2,6 @@ resource:
     name: OrderAmendments
     shortName: order-amendments
 
-    includableIn:
-        - resource: Orders
-          relationshipName: order-amendments
-
     properties:
         uuid:
             type: string
