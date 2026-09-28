@@ -8,6 +8,7 @@ resource:
             writable: false
             readable: true
             required: false
-            description: 'Order reference when the cart is an amendment of an existing order'
+            responseOptional: true
+            description: 'Order reference when the cart is an amendment of an existing order. Answered only for such a cart; an ordinary shopping cart carries none. The populated case is pinned by the OrderAmendments suite.'
             openapiContext:
                 example: 'DE--1'
